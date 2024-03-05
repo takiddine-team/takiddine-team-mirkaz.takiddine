@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("../../fonts/NexaBold.woff2") format("woff2"), url("../../fonts/NexaBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa-med";
+    src: url("../../fonts/NexaRegular.woff2") format("woff2"), url("../../fonts/NexaRegular.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa-light";
+    src: url("../../fonts/NexaLight.woff2") format("woff2"), url("../../fonts/NexaLight.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-extrab';
+    src: url('../../fonts/LoewNextArabic-ExtraBold.woff2') format('woff2'),url('../../fonts/LoewNextArabic-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-heavy';
+    src: url('../../fonts/LoewNextArabic-Heavy.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-medium';
+    src: url('../../fonts/LoewNextArabic-Medium.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-black';
+    src: url('../../fonts/LoewNextArabic-Black.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-bold';
+    src: url('../../fonts/LoewNextArabic-Bold.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-thin';
+    src: url('../../fonts/LoewNextArabic-Thin.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-light';
+    src: url('../../fonts/LoewNextArabic-Light.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ln-reg';
+    src: url('../../fonts/LoewNextArabic-Regular.woff2') format('woff2'),url('../../fonts/LoewNextArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-med';
+    src: url('../../fonts/Tajawal-Medium.woff2') format('woff2'),url('../../fonts/Tajawal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-light';
+    src: url('../../fonts/Tajawal-Light.woff2') format('woff2'),url('../../fonts/Tajawal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-bold';
+    src: url('../../fonts/Tajawal-Bold.woff2') format('woff2'),url('../../fonts/Tajawal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-extrab';
+    src: url('../../fonts/Tajawal-ExtraBold.woff2') format('woff2'),url('../../fonts/Tajawal-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-reg';
+    src: url('../../fonts/Tajawal-Regular.woff2') format('woff2'),url('../../fonts/Tajawal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-black';
+    src: url('../../fonts/Tajawal-Black.woff2') format('woff2'),url('../../fonts/Tajawal-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tajawal-extral';
+    src: url('../../fonts/Tajawal-ExtraLight.woff2') format('woff2'),url('../../fonts/Tajawal-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+    .nexa-light{
+        font-family: 'nexa-light' !important;
+    }
+
+    .nexa{
+        font-family: 'nexa' !important;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0 !important;
+    }
+    body {
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .row {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .row {
+        display: -webkit-box; /* wkhtmltopdf uses this one */
+        display: flex;
+        -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+        justify-content: center;
+    }
+
+    .row > div {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+
+    .row > div:last-child {
+        margin-right: 0;
+    }
+
+    .container {
+        page-break-after: always;
+        page-break-inside: avoid;
+        margin: 0 auto;
+        width: 3199px;
+        height: 1799.99px;
+        position: relative;
+        /*background: green;*/
+    }
+
+    @media print { a.printPage{display: none;} }
+
+    .col-md-1{flex:0 0 auto !important;width:8.33333333% !important}.col-md-2{flex:0 0 auto !important;width:16.66666667% !important}.col-md-3{flex:0 0 auto !important;width:25% !important}.col-md-4{flex:0 0 auto !important;width:33.33333333% !important}.col-md-5{flex:0 0 auto !important;width:41.66666667% !important}.col-md-6{flex:0 0 auto !important;width:50% !important}.col-md-7{flex:0 0 auto !important;width:58.33333333% !important}.col-md-8{flex:0 0 auto !important;width:66.66666667% !important}.col-md-9{flex:0 0 auto !important;width:75% !important}.col-md-10{flex:0 0 auto !important;width:83.33333333% !important}.col-md-11{flex:0 0 auto !important;width:91.66666667% !important}.col-md-12{flex:0 0 auto !important;width:100%}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.222" height="159.47" viewBox="0 0 88.222 159.47">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_517" data-name="Rectangle 517" width="88.222" height="159.47" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_186" data-name="Groupe 186" transform="translate(0 0)">
+    <g id="Groupe_185" data-name="Groupe 185" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Tracé_910" data-name="Tracé 910" d="M14.114,85.834H0V38.224H14.114a23.8,23.8,0,0,1,0,47.61M8.846,76.987h5.268a14.959,14.959,0,1,0,0-29.917H8.846Z" transform="translate(0 23.034)" fill="#241429"/>
+      <rect id="Rectangle_516" data-name="Rectangle 516" width="23.047" height="8.846" transform="translate(53.674 132.678)" fill="#241429"/>
+      <path id="Tracé_911" data-name="Tracé 911" d="M47.213,54.938H.459V14.6L47.553,0l2.62,8.45L9.305,21.12V46.092H38.367v-25.3h8.846Z" transform="translate(0.277 0)" fill="#241429"/>
+      <path id="Tracé_912" data-name="Tracé 912" d="M9.19,116.29H.343V71.564H14.049l15.367,34.513V71.6h8.846v44.585H24.233L9.19,82.4Z" transform="translate(0.207 43.123)" fill="#241429"/>
+      <path id="Tracé_913" data-name="Tracé 913" d="M63.333,116.329h-33.7V71.592h33.7v8.846H38.482v27.045H63.333Z" transform="translate(17.858 43.14)" fill="#241429"/>
+      <path id="Tracé_914" data-name="Tracé 914" d="M49.446,85.834c-12.462,0-22.6-10.68-22.6-23.8s10.138-23.8,22.6-23.8,22.6,10.678,22.6,23.8-10.138,23.8-22.6,23.8m0-38.763c-7.583,0-13.753,6.71-13.753,14.959s6.17,14.958,13.753,14.958S63.2,70.277,63.2,62.029,57.029,47.07,49.446,47.07" transform="translate(16.177 23.034)" fill="#241429"/>
+      <path id="Tracé_915" data-name="Tracé 915" d="M35.592,31.41v5.239h-1.3V31.41H32.366V30.323H37.43V31.41Z" transform="translate(19.503 18.273)" fill="#241429"/>
+      <path id="Tracé_916" data-name="Tracé 916" d="M37.315,31.728V36.65h-1.3V30.323h1.946l1.147,5.037,1.1-5.037h1.962V36.65h-1.3V31.728L39.755,36.65h-1.3Z" transform="translate(21.702 18.272)" fill="#241429"/>
+    </g>
+  </g>
+</svg>

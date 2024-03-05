@@ -1,0 +1,511 @@
+    @font-face {
+        font-family: "Nexa";
+        src: url("../../fonts/NexaBold.woff2") format("woff2"), url("../../fonts/NexaBold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Nexa-med";
+        src: url("../../fonts/NexaRegular.woff2") format("woff2"), url("../../fonts/NexaRegular.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Nexa-light";
+        src: url("../../fonts/NexaLight.woff2") format("woff2"), url("../../fonts/NexaLight.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-LIGHT";
+        src: url("../../fonts/SWISSRA.woff2") format("woff2"), url("../../fonts/SWISSRA.woff") format("woff");
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-MED";
+        src: url("../../fonts/Swissra-Medium.woff2") format("woff2"), url("../../fonts/Swissra-Medium.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-BOLD";
+        src: url("../../fonts/Swissra-Bold.woff2") format("woff2"), url("../../fonts/Swissra-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'fruti-light';
+        src: url('../../fonts/FrutigerLTArabic-45Light.woff2') format('woff2'), url('../../fonts/FrutigerLTArabic-45Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'fruti-bold';
+        src: url('../../fonts/Frutiger-Bold.woff2') format('woff2'), url('../../fonts/Frutiger-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'fruti-roman';
+        src: url('../../fonts/FrutigerLTArabic-55Roman.woff2') format('woff2'), url('../../fonts/FrutigerLTArabic-55Roman.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'uni-bold';
+        src: url('../../fonts/UniversLTStd-Bold.woff2') format('woff2'), url('../../fonts/UniversLTStd-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'uni-std';
+        src: url('../../fonts/UniversLTStd.woff2') format('woff2'), url('../../fonts/UniversLTStd.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'uni-obl';
+        src: url('../../fonts/UniversLTStd-Obl.woff2') format('woff2'), url('../../fonts/UniversLTStd-Obl.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'uni-bold-obl';
+        src: url('../../fonts/UniversLTStd-BoldObl.woff2') format('woff2'), url('../../fonts/UniversLTStd-BoldObl.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'uni-light';
+        src: url('../../fonts/UniversLT-Light.woff2') format('woff2'), url('../../fonts/UniversLT-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    * {
+        margin: 0;
+        letter-spacing: 0 !important;
+        color: #231f20;
+    }
+    body {
+        /* to centre page on screen*/
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .nexa-light { font-family: 'Nexa-light'; }
+
+
+    h3.contract-name {
+        font-family: "SWISSRA-MED";
+    }
+
+    .row {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .row {
+        display: -webkit-box; /* wkhtmltopdf uses this one */
+        display: flex;
+        -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+        justify-content: center;
+    }
+
+    .row > div {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+
+    .row > div:last-child {
+        margin-right: 0;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer .col-md-4.left p, .footer .col-md-4.center h3{
+        color: #2a2a68 !important;
+    }
+
+    .col-md-4 {
+        width: 33.3%;
+        padding: 0 10px;
+    }
+
+    .col-md-4.left {
+        text-align: left;
+        font-family: "Nexa";
+        font-size: 9pt;
+    }
+
+    .col-md-4.center {
+        text-align: center;
+        font-family: "Nexa";
+        font-size: 15px;
+    }
+
+    .col-md-4.right {
+        text-align: right;
+        font-family: "fruti-light";
+        font-size: 10pt;
+    }
+
+    img.logo {
+    margin-top: 85px;
+    width: 230px;
+}
+
+.container {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto;
+    /*width: 210mm;
+    height: 297mm;*/
+    width: 240mm;
+    /*height: 362mm;*/
+    /*height: 371.472354mm;*/
+    height: 367mm;
+    position: relative;
+}
+
+.footer {
+    bottom: 20px;
+    position: absolute;
+}
+
+.col-md-4.center {
+    position: relative;
+}
+
+.col-md-4.center h3 {
+    bottom: 0;
+    font-family: 'Nexa';
+}
+
+.col-md-4.center h3 {
+    font-size: 10pt;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+span.nmr-ftr {
+    font-family: 'uni-roman';
+}
+
+
+.contract-name {
+    position: relative;
+}
+
+.col-md-4.right {
+    position: relative;
+}
+
+.col-md-4.right:before {
+    content: '';
+    display: block;
+    background: #d04055;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    margin: 0 auto;
+    right: -45px;
+}
+.footer .col-md-4.right p{
+    line-height: 20px !important;
+    font-family: 'fruti-roman';
+    font-weight: initial;
+}
+
+
+/*.col-md-4.right p:nth-child(2),.col-md-4.right p:nth-child(3),.col-md-4.right p:nth-child(4) {
+    font-family: 'fruti-light';
+}*/
+
+.col-md-4.left {
+    margin-left: 0px;
+}
+
+.col-md-4.right {
+    margin-right: 15px;
+}
+
+
+
+h3.contract-name {
+    font-size: 30px;
+}
+
+span.nmr-ftr.lo {
+    padding-right: 9px;
+}
+
+span.nmr-ftr.ta {
+    padding-right: 5px;
+}
+
+h3.contract-name {
+    font-family: 'SWISSRA-BOLD';
+    font-size: 17pt;
+}
+
+.col-md-4.left {
+    bottom: -7px;
+    position: relative;
+}
+
+.col-md-4.left p {
+    line-height: 15.5px;
+}
+
+span.mbold {
+    font-family: "SWISSRA-MED";
+}
+
+span.m-light{
+    font-family: "SWISSRA-light";
+    position: relative;
+    right: -3px;
+}
+
+
+.container:after {
+    content: '';
+    position: absolute;
+    background: url('../../img/qubbah/img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 77px;
+    width: 215px;
+    left: 0px;
+    bottom: 180px;
+    z-index: -1;
+}
+
+@media print {
+    @page { margin: 0; }
+}
+
+.content {
+    text-align: right;
+    font-family: 'fruti-light';
+}
+
+
+h3.content-title {
+    display: inline-block;
+    position: relative;
+    font-family: 'fruti-light';
+    width: 100%;
+    font-size: 12pt;
+}
+
+
+.content {
+    /*padding: 0 41px;*/
+    direction: rtl;
+    margin-top: 20px;
+}
+
+h3.contract-date {
+    margin-bottom: 40px;
+}
+
+p.para-justify {
+    text-align: justify;
+}
+
+table.services, th, td {
+  border: 1px solid #7a7a7a;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+padding-bottom: 5px;
+}
+table.services {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+table.services tr td:last-child {
+    text-align: center;
+}
+
+td[rowspan="4"] {
+    text-align: center;
+}
+
+table.services, th, td {
+    font-size: 8pt;
+    font-family: 'fruti-roman' !important;
+}
+
+table.services tr.heade {
+    text-align: center;
+    font-family: 'fruti-roman' !important;
+}
+
+table.services tr.heade th {
+    font-family: 'fruti-roman' !important;
+    font-size: 9pt;
+}
+
+table.services tr.heade th{
+    font-family: 'fruti-roman' !important;
+}
+
+.tozzomt{ position: relative; }
+.tozzomt .mar-top { margin-top: 14px ;}
+.tozzomt .mar-bott { margin-bottom: 6px ;}
+.bott-border{ height: 1px; width: 100%; background: #7A7A7A; position: absolute; right: 0px;  }
+
+.content{padding:0 21px;margin-top:12px}
+.content p{
+    font-size:11.6pt;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.footer .col-md-4.right{ width: 40%; position: relative; bottom: -0px; }
+
+.footer .col-md-4.center{ position: relative; bottom: 0px; right: -3.4%; }
+
+.footer .col-md-4.center h3{
+    letter-spacing: 4px !important;
+    font-size: 17px;
+}
+
+.footer .col-md-4.right p {
+    line-height: 30px;
+}
+
+.footer .col-md-4.right .mbold , .tachrit .row .col-md-8 .m3adi{ position: relative; right: -2px;  }
+
+.uni-light{ font-family: 'uni-light'; }
+.uni-reg{ font-family: 'uni-std'; }
+.uni-roman{ font-family: 'uni-roman'; }
+.fruti-light{ font-family: 'fruti-light'; }
+.uni-bold{ font-family: 'uni-bold'; }
+.fruti-roman{ font-family: 'fruti-roman'; }
+.fruti-bold{ font-family: 'fruti-bold' }
+/***/
+.signature p {
+	text-align: right;
+	font-size: 12.3pt
+}
+
+.signature h3.si-content-title {
+	text-align: right;
+	font-family: 'fruti-roman';
+	font-size: 12.3pt
+}
+
+.signature .col-md-4:first-child {
+	padding-right: 0!important
+}
+
+.signature .col-md-4:last-child h3 {
+	text-align: left!important
+}
+
+.signature .col-md-6 {
+	padding: 0 20px;
+	position: relative
+}
+
+.signature .col-md-6:before {
+	content: '';
+	display: block;
+	background: #2a2a68;
+	width: 15px;
+	height: 70%;
+	position: absolute;
+	bottom: 25%;
+	z-index: -1;
+	margin: 0 auto;
+	right: -5px
+}
+
+.signature .col-md-4:nth-child(2) h3 {
+	text-align: center
+}
+
+p.signature-date {
+	text-align: left;
+	position: relative;
+	left: -25px;
+}
+
+.signature .boot h3.si-content-title{
+    font-family: 'fruti-light' !important;
+    font-weight: 300;
+}
+
+.signature p {
+    line-height: 23px;
+}
+
+.signature {
+	font-family: 'fruti-light';
+	direction: rtl;
+	position: absolute;
+	width: 90%;
+	bottom: 140px;
+	left: 0;
+	right: 0;
+	margin: 0 auto
+}
+
+h3.content-title, h3.content-title span{
+    color: #c84055 !important;
+}
+table tr.heade th, table tr.heade th span, table tr td.fruti-bold{ color: #c84055 !important }
+.content.lflos{ position: absolute; bottom: 150px; right: 0; width: 100%; }
+
+.qr-code{
+    text-align: right;
+}
+.qr-code img.qr-img{
+    position: relative;
+    top: 30px;
+    right: 67px;
+}

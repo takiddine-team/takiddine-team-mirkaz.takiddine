@@ -1,0 +1,724 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("../../fonts/NexaBold.woff2") format("woff2"), url("../../fonts/NexaBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa-med";
+    src: url("../../fonts/NexaRegular.woff2") format("woff2"), url("../../fonts/NexaRegular.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa-light";
+    src: url("../../fonts/NexaLight.woff2") format("woff2"), url("../../fonts/NexaLight.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../../fonts/Tajawal-Medium.woff2') format('woff2'),url('../../fonts/Tajawal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-Light';
+    src: url('../../fonts/Tajawal-Light.woff2') format('woff2'),url('../../fonts/Tajawal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-Bold';
+    src: url('../../fonts/Tajawal-Bold.woff2') format('woff2'),url('../../fonts/Tajawal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-ExtraBold';
+    src: url('../../fonts/Tajawal-ExtraBold.woff2') format('woff2'),url('../../fonts/Tajawal-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-Regular';
+    src: url('../../fonts/Tajawal-Regular.woff2') format('woff2'),url('../../fonts/Tajawal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-Black';
+    src: url('../../fonts/Tajawal-Black.woff2') format('woff2'),url('../../fonts/Tajawal-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-ExtraLight';
+    src: url('../../Tajawal-ExtraLight.woff2') format('woff2'),url('../../Tajawal-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yanson-Bold';
+    src: url('../../fonts/Yanson-Bold.woff2') format('woff2'),url('../../fonts/Yanson-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yanson';
+    src: url('../../fonts/Yanson-Regular.woff2') format('woff2'),url('../../fonts/Yanson-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yanson-Light';
+    src: url('../../fonts/Yanson-Light.woff2') format('woff2'),url('../../fonts/Yanson-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    letter-spacing: 0 !important;
+    color: #231f20;
+}
+body {
+    /* to centre page on screen*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nexa-light { font-family: 'Tajawal'; }
+.nexa-med { font-family: 'Nexa-med'; }
+.nexa { font-family: 'Nexa'; }
+
+
+h3.contract-name {
+    font-family: "Tajawal";
+}
+
+.row {
+    display: inline-flex;
+    width: 100%;
+}
+
+.row {
+    display: -webkit-box; /* wkhtmltopdf uses this one */
+    display: flex;
+    -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+    justify-content: center;
+}
+
+.row > div {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.row > div:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer .col-md-4.left p, .footer .col-md-4.center h3{
+    color: #1D1D1B !important;
+}
+
+.col-md-4 {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.col-md-4.left {
+    text-align: left;
+    font-family: "Nexa";
+    font-size: 9pt;
+}
+
+.col-md-4.center {
+    text-align: center;
+    font-family: "Nexa-med";
+    font-size: 15px;
+}
+
+.col-md-4.right {
+    text-align: right;
+    font-family: "fruti-light";
+    font-size: 10pt;
+}
+
+.text-left{
+    text-align: left;
+}
+
+img.logo {
+margin-top: -50px;
+margin-left: 40px;
+width: 220px;
+height: 350px;
+}
+
+.container {
+page-break-after: always;
+page-break-inside: avoid;
+margin: 0 auto;
+/*width: 210mm;
+height: 297mm;*/
+width: 240mm;
+/*height: 362mm;*/
+/*height: 371.472354mm;*/
+height: 367mm;
+position: relative;
+}
+
+.footer {
+bottom: 20px;
+position: absolute;
+}
+
+.col-md-4.center {
+position: relative;
+}
+
+.col-md-4.center h3 {
+bottom: 0;
+font-family: 'Nexa-med';
+font-weight: 600;
+}
+
+.col-md-4.center h3 {
+font-size: 10pt;
+letter-spacing: px;
+position: absolute;
+right: 0;
+left: 0;
+margin: 0 auto;
+bottom: 0;
+}
+
+span.nmr-ftr {
+font-family: 'Tajawal';
+}
+
+
+.contract-name {
+position: relative;
+}
+
+.col-md-4.right {
+position: relative;
+}
+
+
+.footer .col-md-4.right p{
+line-height: 20px !important;
+font-family: 'Tajawal', sans-serif;
+font-weight: initial;
+}
+
+
+/*.col-md-4.right p:nth-child(2),.col-md-4.right p:nth-child(3),.col-md-4.right p:nth-child(4) {
+font-family: 'Tajawal-Light', sans-serif;
+}*/
+
+.col-md-4.left {
+margin-left: 0px;
+}
+
+.col-md-4.right {
+margin-right: 15px;
+}
+
+
+
+h3.contract-name {
+font-size: 30px;
+}
+
+span.nmr-ftr.lo {
+padding-right: 9px;
+}
+
+span.nmr-ftr.ta {
+padding-right: 5px;
+}
+
+h3.contract-name {
+font-family: 'Tajawal-Bold';
+font-size: 17pt;
+}
+
+.col-md-4.left {
+bottom: -7px;
+position: relative;
+}
+
+.col-md-4.left p {
+line-height: 15.5px;
+}
+
+span.mbold {
+font-family: "Tajawal";
+}
+
+span.m-light{
+font-family: "Tajawal-Light";
+position: relative;
+right: -3px;
+}
+
+
+
+
+@media print {
+@page { margin: 0; }
+}
+
+.content {
+text-align: right;
+font-family: 'Tajawal-Light', sans-serif;
+}
+
+
+h3.content-title {
+display: inline-block;
+position: relative;
+font-family: 'Tajawal-Light', sans-serif;
+width: 100%;
+font-size: 11pt;
+}
+
+
+.content {
+/*padding: 0 41px;*/
+direction: rtl;
+margin-top: 20px;
+}
+
+h3.contract-date {
+margin-bottom: 40px;
+}
+
+p.para-justify {
+text-align: justify;
+}
+
+table.services, th, td {
+border: 1px solid #7a7a7a;
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+border-top: none !important;
+}
+
+table.services th:last-child,
+table.services td:last-child{
+    border-left: none !important;
+}
+
+table.services th:first-child,
+table.services td:first-child{
+    border-right: none !important;
+}
+
+table.services {
+border-collapse: collapse;
+margin: 0 auto;
+margin-top: 40px;
+}
+
+table.services tr td:last-child {
+text-align: center;
+}
+
+td[rowspan="4"] {
+text-align: center;
+}
+
+table.services, th, td {
+font-size: 8.8pt;
+font-weight: 400;
+font-family: 'Tajawal', sans-serif !important;
+}
+
+table.services tr.heade {
+text-align: center;
+font-family: 'Tajawal-Bold', sans-serif !important;
+}
+
+table.services tr td .undexrline{
+    font-family: 'Tajawal-Bold', sans-serif !important;
+    font-weight: 400;
+}
+
+table.services tr.heade th {
+font-family: 'Tajawal', sans-serif !important;
+font-size: 9pt;
+}
+
+table.services tr.heade th{
+font-family: 'Tajawal-Bold', sans-serif !important;
+}
+
+.tozzomt{ position: relative; }
+.tozzomt .mar-top { margin-top: 14px ;}
+.tozzomt .mar-bott { margin-bottom: 6px ;}
+.bott-border{ height: 1px; width: 100%; background: #7A7A7A; position: absolute; right: 0px;  }
+
+.content{padding:0 21px;margin-top:12px}
+.content p{
+font-size:11.6pt;
+text-align: justify;
+line-height: 28px;
+}
+
+.footer .col-md-4.right{ width: 40%; position: relative; bottom: -0px; }
+
+.footer .col-md-4.center{ position: relative; bottom: -9px; right: 0%; }
+
+.footer .col-md-4.center h3{
+letter-spacing: 2px !important;
+font-size: 15px;
+}
+
+.footer .col-md-4.right p {
+line-height: 30px;
+}
+
+.footer .col-md-4.right .mbold , .tachrit .row .col-md-8 .m3adi{ position: relative; right: -2px;  }
+
+.uni-light{ font-family: 'uni-light'; }
+.uni-reg{ font-family: 'uni-std'; }
+.uni-roman{ font-family: 'Tajawal'; }
+.fruti-light{ font-family: 'Tajawal-Light', sans-serif; }
+.uni-bold{ font-family: 'uni-bold'; }
+.fruti-roman{ font-family: 'Tajawal', sans-serif; }
+.fruti-bold{ font-family: 'fruti-bold' }
+/***/
+.signature p {
+text-align: right;
+font-size: 11pt
+}
+
+.signature h3.si-content-title {
+text-align: right;
+font-family: 'Tajawal', sans-serif;
+font-size: 11pt;
+}
+
+.signature h3.si-content-title.main-tit {
+    font-size: 12pt;
+    color: #1D1D1B;
+}
+
+.signature .col-md-6:first-child h3 {
+    position: relative;
+    right: -5px;    
+}
+
+.signature .col-md-6:first-child p:last-child {
+    position: relative;
+    right: 16px !important;
+}
+
+.signature .col-md-6:first-child p:nth-child(2) {
+    position: relative;
+    right: -3.75px;
+}
+
+
+.signature .col-md-4:first-child {
+padding-right: 0!important
+}
+
+.signature .col-md-4:last-child h3 {
+text-align: left!important
+}
+
+.signature .col-md-6 {
+padding: 0 20px;
+position: relative;
+line-height: 30px;
+}
+
+.signature .col-md-4:nth-child(2) h3 {
+text-align: center
+}
+
+p.signature-date {
+text-align: left;
+position: relative;
+left: -25px;
+}
+
+.signature .boot h3.si-content-title{
+font-family: 'Tajawal-Light', sans-serif !important;
+font-weight: 300;
+}
+
+.signature p {
+line-height: 23px;
+}
+
+.signature {
+font-family: 'Tajawal-Light', sans-serif;
+direction: rtl;
+position: absolute;
+width: 90%;
+bottom: 140px;
+left: 0;
+right: 0;
+margin: 0 auto
+}
+
+h3.content-title, h3.content-title span{
+color: #1D1D1B !important;
+}
+table tr.heade th, table tr.heade th span, table tr td.fruti-bold{ color: #1D1D1B !important }
+.content.lflos{ position: absolute; bottom: 110px; right: 0; width: 100%; }
+
+.qr-code{
+text-align: left;
+}
+.qr-code img.qr-img{
+position: relative;
+top: 10px;
+left: 0px;
+}
+
+.footer .col-md-4.right p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: initial;
+}
+
+.content.lflos .tachrit.tisnat p{
+    line-height: 18px;
+    font-family: 'Tajawal-Bold';
+    font-weight: 200;
+}
+
+.content.lflos .tachrit.tisnat p.font-med{
+    font-weight: 400;
+}
+
+
+
+.content-title-price .undexrline{ position: relative; right: 25px }
+.content-title-price .undexrline:before{ content: ''; width: 50px; height: 30px; position: absolute; bottom: 8px; right: -60px ;background: url('../../img/blackmist/blackmist-icon.svg'); background-repeat: no-repeat; }
+.content.one { position: relative; right: 10px; }
+.content.one .content-title-price{ position: relative; right: -20px; }
+.content.one div{ font-size: 17px; line-height: 28px }
+.total-sum{ margin: 0 auto; }
+.total-sum .row{ margin: -5px 0; position: relative; }
+.total-sum .row:first-child{ margin-top: 20px }
+.total-sum .row:before{ content: ''; width: 100%; height: 1.5px; position: absolute; left: 0px; right: 0; top: 12px; background: #1D1D1B; z-index: -5;}
+.total-sum .title-table{ width: 73%; text-align: right; font-size: 14px; }
+.total-sum .nbr-table{ width: 27%; text-align: right; font-size: 14px; background: white; padding-right: 10px; }
+.total-sum .nbr-table .nmr-ftr{ background: #1D1D1B; color: white; width: 48%; display: inline-table; text-align: center; line-height: 15px; padding-top: 6px; top: -5px; position: relative; }
+.total-sum .nbr-table .currency{ width: 50%; display: inline-table; }
+.total-sum .title-table span{ background: white; z-index: 9999999999; padding-left: 10px }
+span.ta-total{padding-right:15px}
+
+.total-sum .summ span{ color: #1D1D1B !important;  }
+.total-sum .summ span.nmr-ftr{ color: white !important;  }
+.total-sum .summ:before{ background: #1D1D1B; }
+
+
+h3.title.had{ font-family: 'Tajawal-Bold'; }
+
+/* .container:before{
+    position: absolute;
+    content: '';
+    background: url('../../img/done/dotdone.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: -60px;
+    height: 280px;
+    width: 120px;
+} */
+
+
+.container.chbak:after{
+    position: absolute;
+    content: '';
+    background: url('../../img/done/home-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 73%;
+    left: -30px;
+    height: 230px;
+    width: 230px;
+}
+
+.signature:before{
+    position: absolute;
+    content: '';
+    background: url('../../img/done/zigzag.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -80px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;;
+    height: 95px;
+    width: 140px;
+}
+
+.footer .col-md-4.afasi p { display: block; }
+.footer .col-md-4.afasi .to-left{ direction: rtl }
+.footer .col-md-4.afasi .to-left .ness{ width: 43.98%; display: inline-block }
+.footer .col-md-4.afasi .to-left .ness.nexa{ text-align: left; }
+.footer .col-md-4.afasi .to-left:last-child .ness{  width: 41.9%; }
+
+
+.content.lflos {
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+    left: -5%;
+    margin: 0;
+	width: 100%;
+}
+
+.content.lflos p {
+    font-size: 13px;
+	line-height: 22px;
+}
+
+.lflos .col-md-6.left, .lflos .col-md-6.left p{
+    text-align: left;
+    direction: ltr;
+}
+
+a{text-decoration: none;}
+
+.content.lflos{
+    line-height: 10px;
+}
+
+.icon-kit{
+    position: relative;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 0px;
+    margin-top: -53px;
+}
+
+.icon-social{
+    position: relative;
+    height: 20px;
+    left: -2.5px;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
+
+.lflos .col-md-6.left a, .lflos .col-md-6.left p{
+    position: relative;
+    left: -10px;
+    font-size: 9.5px !important;
+}
+
+/* .lflos .col-md-6.left a {
+    line-height: 15px;
+}
+
+.lflos .col-md-6.left p{
+    line-height: 10px;
+}
+
+.lflos .col-md-6.left a{
+    position: relative;
+    padding-top: 15px;
+} */
+
+.lflos .how-topay{
+    background: #1D1D1B;
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.col-md-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;width:8.333333%}
+.col-md-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;width:91.666667%}
+
+.lflos .col-md-11 a span{ line-height: 20px; }
+.lflos .email-bottom {  position: relative;display: inline-block; top: 4px;  }
+/* .lflos .col-md-11 p { padding-top:7px } */
+
+.lflos .col-md-6.left{
+    position: relative;
+    bottom: -40px;
+}
+
+.content.lflos .tachrit.tisnat{
+    display: -webkit-box;
+}
+
+.blackmist-footer{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.footer {
+    width: 100%;
+	bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	position: absolute;
+}
+.footer{
+    border-top: 1px solid rgb(117, 117, 117);
+    padding-top: 10px;
+}
+
+.footer p{
+    font-size: 12px;
+    font-family: 'Tajawal-med';
+
+}
+.footer .text-center .nexa{ font-size: 11px; }
+
+table.services{
+    border-top-color: white !important;
+    border-right-color: white !important;
+    border-left-color: white !important;
+}

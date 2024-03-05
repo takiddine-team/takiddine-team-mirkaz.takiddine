@@ -1,0 +1,413 @@
+    @font-face {
+        font-family: "Nexa";
+        src: url("../fonts/NexaBold.woff2") format("woff2"), url("../fonts/NexaBold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Nexa-med";
+        src: url("../fonts/NexaRegular.woff2") format("woff2"), url("../fonts/NexaRegular.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Nexa-light";
+        src: url("../fonts/NexaLight.woff2") format("woff2"), url("../fonts/NexaLight.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-LIGHT";
+        src: url("../fonts/SWISSRA.woff2") format("woff2"), url("../fonts/SWISSRA.woff") format("woff");
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-MED";
+        src: url("../fonts/Swissra-Medium.woff2") format("woff2"), url("../fonts/Swissra-Medium.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-BOLD";
+        src: url("../fonts/Swissra-Bold.woff2") format("woff2"), url("../fonts/Swissra-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    * {
+        margin: 0;
+        letter-spacing: 0 !important;
+    }
+    body {
+        /* to centre page on screen*/
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .nexa-light { font-family: 'Nexa-light'; }
+
+
+    h3.contract-name {
+        font-family: "SWISSRA-MED";
+    }
+
+    .row {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .row {
+        display: -webkit-box; /* wkhtmltopdf uses this one */
+        display: flex;
+        -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+        justify-content: center;
+    }
+
+    .row > div {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+
+    .row > div:last-child {
+        margin-right: 0;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .col-md-4 {
+        width: 33.3%;
+        padding: 0 10px;
+    }
+
+    .col-md-4.left {
+        text-align: left;
+        font-family: "Nexa";
+        font-size: 9pt;
+    }
+
+    .col-md-4.center {
+        text-align: center;
+        font-family: "Nexa";
+        font-size: 15px;
+    }
+
+    .col-md-4.right {
+        text-align: right;
+        font-family: "SWISSRA-MED";
+        font-size: 10pt;
+    }
+
+    img.logo {
+    margin-top: 85px;
+}
+
+.container {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto;
+    /*width: 210mm;
+    height: 297mm;*/
+    width: 240mm;
+    /*height: 362mm;*/
+    /*height: 371.472354mm;*/
+    height: 367mm;
+    position: relative;
+}
+
+.footer {
+    bottom: 20px;
+    position: absolute;
+}
+
+.col-md-4.center {
+    position: relative;
+}
+
+.col-md-4.center h3 {
+    bottom: 0;
+    font-family: 'Nexa';
+}
+
+.col-md-4.center h3 {
+    font-size: 10pt;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+span.nmr-ftr {
+    font-family: 'Nexa-med';
+}
+
+
+
+.contract-name:before {
+    content: '';
+    display: block;
+    background: #ffbe2e;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 9px;
+    z-index: -1;
+    margin: 0 auto;
+    left: 0px;
+    right: 0;
+}
+
+.contract-name {
+    position: relative;
+}
+
+.col-md-4.right {
+    position: relative;
+}
+
+.col-md-4.right:before {
+    content: '';
+    display: block;
+    background: #ffbe2e;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    margin: 0 auto;
+    right: -1px;
+}
+
+.col-md-4.right p:nth-child(2),.col-md-4.right p:nth-child(3),.col-md-4.right p:nth-child(4) {
+    font-family: 'SWISSRA-LIGHT';
+}
+
+.col-md-4.right p:nth-child(2) {
+    font-size: 8pt;
+}
+
+.col-md-4.left {
+    margin-left: 0px;
+}
+
+.col-md-4.right {
+    margin-right: 15px;
+}
+
+
+
+h3.contract-name {
+    font-size: 30px;
+}
+
+span.nmr-ftr.lo {
+    padding-right: 9px;
+}
+
+span.nmr-ftr.ta {
+    padding-right: 5px;
+}
+
+h3.contract-name {
+    font-family: 'SWISSRA-BOLD';
+    font-size: 17pt;
+}
+
+
+
+.col-md-4.left {
+    bottom: -10px;
+    position: relative;
+}
+span.mbold {
+    font-family: "SWISSRA-MED";
+}
+
+
+.container:before {content: '';position: absolute;background: url('../img/visual-production/img1.svg');background-repeat: no-repeat;background-size: cover;height: 8.3cm;width: 1.2cm;left: 19.86cm;z-index: -1;}
+
+
+.container:after {
+    content: '';
+    position: absolute;
+    background: url('../img/visual-production/img2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4.4938cm;
+    width: 5.1cm;
+    left: -45px;
+    bottom: 340px;
+    z-index: -1;
+}
+
+.footer.dyal:before {
+    content: '';
+    position: absolute;
+    background: url('../img/visual-production/img3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2.5cm;
+    width: 7.6927cm;
+    right: -45px;
+    top: -120px;
+    z-index: -1;
+}
+
+.container.chbak:after {
+    content: '';
+    position: absolute;
+    background: url('../img/visual-production/img2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4.4938cm;
+    width: 5.1cm;
+    left: -45px;
+    bottom: 340px !important;
+    z-index: -1;
+}
+
+@media print {
+    @page { margin: 0; }
+}
+
+.content {
+    text-align: right;
+    font-family: 'SWISSRA-LIGHT';
+}
+
+span.undexrline:before {
+    content: '';
+    display: block;
+    background: #ffbe2e;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: 6px;
+    z-index: -1;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+span.undexrline {
+    position: relative;
+}
+
+h3.content-title {
+    display: inline-block;
+    position: relative;
+    font-family: 'SWISSRA-BOLD';
+    font-size: 12pt;
+}
+
+h3.content-title:before {
+    content: '';
+    display: block;
+    background: #ffbe2e;
+    width: 7px;
+    height: 72%;
+    position: absolute;
+    bottom: 5px;
+    z-index: -1;
+    margin: 0 auto;
+    right: -15px;
+}
+
+.content {
+    /*padding: 0 41px;*/
+    direction: rtl;
+    margin-top: 20px;
+}
+
+h3.contract-date {
+    margin-bottom: 40px;
+}
+
+p.para-justify {
+    text-align: justify;
+}
+
+.content p {
+    font-size: 9.9pt;
+}
+
+table.services, th, td {
+  border: 1px solid #7a7a7a;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+padding-bottom: 5px;
+}
+table.services {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+table.services tr td:last-child {
+    text-align: center;
+}
+
+td[rowspan="4"] {
+    text-align: center;
+}
+
+table.services, th, td {
+    font-size: 8pt;
+    font-family: 'SWISSRA-BOLD';
+}
+
+table.services tr.heade {
+    text-align: center;
+}
+
+table.services tr.heade th {
+    font-family: 'SWISSRA-BOLD';
+    font-size: 9pt;
+}
+
+.swis-light {
+    font-family: 'SWISSRA-LIGHT';
+}
+
+.content{padding:0 21px;margin-top:12px}.content p{font-size:12.3pt;text-align: justify;}
+
+.footer .col-md-4.center{ position: relative; bottom: -10px; }
+
+.footer .col-md-4.center h3{
+    letter-spacing: 4px !important;
+    font-size: 17px;
+}
+
+.footer .col-md-4.left p {
+    font-family: 'Nexa-med' !important;
+}
+
+
+.footer .col-md-4.right .mbold , .tachrit .row .col-md-8 .m3adi{ position: relative; right: -2px; }
+.footer .col-md-4.right p:nth-child(2){ padding-right: 4px; }
+.content.lflos{ position: absolute; bottom: 150px; right: 0; }
+.qr-code{
+    text-align: left;
+}
+.qr-code img.qr-img{
+    position: relative;
+    top: 5px;
+}

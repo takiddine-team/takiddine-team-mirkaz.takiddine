@@ -1,0 +1,606 @@
+@font-face {
+    font-family: 'Tajawal-med';
+    src: url('../../fonts/Tajawal-Medium.woff2') format('woff2'),url('../../fonts/Tajawal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-light';
+    src: url('../../fonts/Tajawal-Light.woff2') format('woff2'),url('../../fonts/Tajawal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-med';
+    src: url('../../fonts/Tajawal-Bold.woff2') format('woff2'),url('../../fonts/Tajawal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-extrab';
+    src: url('../../fonts/Tajawal-ExtraBold.woff2') format('woff2'),url('../../fonts/Tajawal-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-reg';
+    src: url('../../fonts/Tajawal-Regular.woff2') format('woff2'),url('../../fonts/Tajawal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-black';
+    src: url('../../fonts/Tajawal-Black.woff2') format('woff2'),url('../../fonts/Tajawal-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal-extral';
+    src: url('../../fonts/Tajawal-ExtraLight.woff2') format('woff2'),url('../../fonts/Tajawal-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Nexa";
+    src: url("../../fonts/NexaBold.woff2") format("woff2"), url("../../fonts/NexaBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa-med";
+    src: url("../../fonts/NexaRegular.woff2") format("woff2"), url("../../fonts/NexaRegular.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa-light";
+    src: url("../../fonts/NexaLight.woff2") format("woff2"), url("../../fonts/NexaLight.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+	margin: 0;
+	letter-spacing: 0 !important;
+	color: #231f20;
+}
+
+body {
+	/* to centre page on screen*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nexa-light {
+	font-family: 'Nexa-light';
+}
+
+.nexa {
+	font-family: 'Nexa-med' !important;
+}
+
+h3.contract-name {
+	font-family: "SWISSRA-MED";
+}
+
+.row {
+	display: inline-flex;
+	width: 100%;
+}
+
+.row {
+	display: -webkit-box;
+	/* wkhtmltopdf uses this one */
+	display: flex;
+	-webkit-box-pack: center;
+	/* wkhtmltopdf uses this one */
+	justify-content: center;
+}
+
+.row>div {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.row>div:last-child {
+	margin-right: 0;
+}
+
+.footer {
+	width: 100%;
+}
+
+.col-md-4 {
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+img.logo {
+	margin-top: 50px;
+	width: 330px;
+}
+
+.container {
+	page-break-after: always;
+	page-break-inside: avoid;
+	margin: 0 auto;
+	/*width: 210mm;
+    height: 297mm;*/
+	width: 240mm;
+	/*height: 362mm;*/
+	/*height: 371.472354mm;*/
+	height: 367mm;
+	position: relative;
+}
+
+.footer {
+	bottom: 20px;
+	position: absolute;
+}
+
+.col-md-4.center {
+	position: relative;
+}
+
+.col-md-4.center h3 {
+	bottom: 0;
+	font-family: 'Nexa';
+}
+
+.col-md-4.center h3 {
+	font-size: 10pt;
+	letter-spacing: 1px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	bottom: 0;
+}
+
+span.nmr-ftr {
+	font-family: 'uni-roman';
+}
+
+.contract-name {
+	position: relative;
+}
+
+.col-md-4.right {
+	position: relative;
+}
+
+
+
+
+/*.col-md-4.right p:nth-child(2),.col-md-4.right p:nth-child(3),.col-md-4.right p:nth-child(4) {
+    font-family: 'Tajawal-med';
+}*/
+
+.col-md-4.left {
+	margin-left: 0px;
+}
+
+.col-md-4.right {
+	margin-right: 15px;
+}
+
+h3.contract-name {
+	font-size: 30px;
+}
+
+span.nmr-ftr.lo {
+	padding-right: 9px;
+}
+
+span.nmr-ftr.ta {
+	padding-right: 5px;
+}
+
+.col-md-4.left {
+	bottom: -7px;
+	position: relative;
+}
+
+.col-md-4.left p {
+	line-height: 15.5px;
+}
+
+
+@media print { @page {margin: 0;} }
+
+.content {
+	text-align: right;
+	font-family: 'Tajawal-med';
+}
+
+h3.content-title {
+	display: inline-block;
+	position: relative;
+	font-family: 'Tajawal-med';
+	width: 100%;
+	font-size: 12pt;
+}
+
+.content {
+	/*padding: 0 41px;*/
+	direction: rtl;
+	margin-top: 20px;
+}
+
+h3.contract-date {
+	margin-bottom: 40px;
+}
+
+p.para-justify {
+	text-align: justify;
+}
+
+table.services,
+th,
+td {
+	border-bottom: 1px solid rgb(117, 117, 117);
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 7px;
+	padding-bottom: 2px;
+}
+
+table.services {
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+table.services tr td {
+	text-align: center;
+}
+
+td[rowspan="4"] {
+	text-align: center;
+}
+
+table.services,
+th,
+td {
+	font-size: 11pt;
+	font-family: 'Tajawal-med' !important;
+}
+
+table.services tr.heade {
+	text-align: center;
+	font-family: 'Tajawal-med' !important;
+}
+
+table.services tr.heade th {
+	font-family: 'Tajawal-med' !important;
+	font-size: 10pt;
+}
+
+table.services tr.heade th {
+	font-family: 'Tajawal-med' !important;
+}
+
+.tozzomt {
+	position: relative;
+}
+
+.tozzomt .mar-top {
+	margin-top: 14px;
+}
+
+.tozzomt .mar-bott {
+	margin-bottom: 6px;
+}
+
+.bott-border {
+	height: 1px;
+	width: 100%;
+	background: #7A7A7A;
+	position: absolute;
+	right: 0px;
+}
+
+.content {
+	padding: 0 21px;
+	margin-top: 12px
+}
+
+.content p{
+	font-size: 11.6pt;
+	text-align: justify;
+	line-height: 28px;
+}
+
+
+/***/
+
+.signature p {
+	text-align: right;
+	font-size: 12.3pt
+}
+
+.signature h3.si-content-title {
+	text-align: right;
+	font-family: 'fruti-roman';
+	font-size: 12.3pt
+}
+
+.signature .col-md-4:first-child {
+	padding-right: 0!important
+}
+
+.signature .col-md-4:last-child h3 {
+	text-align: left!important
+}
+
+.signature .col-md-6 {
+	padding: 0 20px;
+	position: relative
+}
+
+.signature .col-md-4:nth-child(2) h3 {
+	text-align: center
+}
+
+p.signature-date {
+	text-align: left;
+	position: relative;
+	left: -25px;
+}
+
+.signature .boot h3.si-content-title {
+	font-family: 'Tajawal-bold' !important;
+	font-weight: 300;
+}
+
+.signature p {
+	line-height: 23px;
+}
+
+.signature {
+	font-family: 'Tajawal-med';
+	direction: rtl;
+	position: absolute;
+	width: 90%;
+	bottom: 140px;
+	left: 0;
+	right: 0;
+	margin: 0 auto
+}
+
+.col-md-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;width:8.333333%}
+.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;width:25%}
+.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;width:33.333333%}
+.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;width:66.666667%}
+.col-md-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;width:75%}
+.col-md-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;width:91.666667%}
+
+.info-invoice .col-md-8 p {
+    word-wrap: break-word;
+}
+
+.title.had{
+    color: #cf3339;
+    font-size: 30px;
+    margin-bottom: 20px;
+    right: 35px;
+    position: relative;
+}
+
+.content.one .info-invoice{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content.one{
+    margin-top: 50px;
+}
+
+.info-invoice{
+    position: relative;
+    right: -10px;
+}
+
+.info-invoice .col-md-9{
+    text-align: right !important;
+}
+
+.info-invoice h6{
+    font-family: 'Tajawal-med' !important;
+    font-weight: initial !important;
+}
+.content .info-invoice p , .content .info-invoice h6 {
+    font-size: 11pt;
+	text-align: justify;
+	line-height: initial;
+}
+
+.content .info-invoice .row{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+.content .info-invoice .row:last-child{
+    border-bottom: none;
+}
+
+.col-md-4.right{
+    right: -25px;
+}
+
+table.total-pri {
+    border-collapse: collapse;
+    position: relative;
+    right: 42.6%;
+    width: 55%;
+}
+
+table.total-pri td {
+    color: #cf3339;
+}
+
+table.total-pri td.price-total{
+    width: 76.5%;
+}
+
+/****/
+table.total-pri.mini {
+    right: 27.6%;
+}
+table.total-pri.mini td.price-total{
+    width: 65%;
+}
+/****/
+
+table.total-pri td:nth-child(2){
+    text-align: center;
+}
+
+.invoice{
+    margin-top: 80px;
+}
+
+table .nexa{
+    font-size: 11px !important;
+}
+
+.content.lflos {
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+    left: -2.5%;
+    margin: 0;
+	width: 100%;
+}
+
+.content.lflos p {
+    font-size: 13px;
+	line-height: 22px;
+}
+
+.lflos .col-md-6.left, .lflos .col-md-6.left p{
+    text-align: left;
+    direction: ltr;
+}
+
+a{text-decoration: none;}
+
+.content.lflos{
+    line-height: 10px;
+}
+
+.icon-kit{
+    position: relative;
+    width: 35px;
+    height: 150px;
+    margin-bottom: -40px;
+    margin-top: -53px;
+}
+
+.icon-social{
+    position: relative;
+    width: 15px;
+    left: -2.5px;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
+
+.lflos .col-md-6.left a, .lflos .col-md-6.left p{
+    position: relative;
+    left: -10px;
+    font-size: 9.5px !important;
+}
+
+.lflos .col-md-6.left a {
+    line-height: 15px;
+}
+
+.lflos .col-md-6.left p{
+    line-height: 10px;
+}
+
+.lflos .col-md-6.left a{
+    position: relative;
+    padding-top: 15px;
+}
+
+.lflos .how-topay{
+    color: #cf3339;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.footer{
+    direction: rtl;
+    border-top: 1px solid rgb(117, 117, 117);
+    padding-top: 10px;
+}
+
+.footer p{
+    font-size: 12px;
+    font-family: 'Tajawal-med';
+
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.content.info{
+    direction: ltr !important;
+    position: absolute;
+    bottom: 178px;
+    width: 100%;
+    left: -2.5%;
+}
+
+.content.info p{
+    font-size: 11.3px;
+    line-height: 15px;
+    text-align: right;
+    right: 0;
+}
+
+.content.info .green{
+    color: #42af64;
+}
+
+
+.footer .text-center .nexa{ font-size: 11px; }
+.qr-code img.qr-img{
+    position: relative;
+    top: -20px;
+    right: -10px;
+}

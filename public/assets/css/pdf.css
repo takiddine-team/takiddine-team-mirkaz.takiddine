@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    letter-spacing: 0 !important;
+    color: #231f20;
+}
+body {
+    /* to centre page on screen*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    display: inline-flex;
+    width: 100%;
+}
+
+.row {
+    display: -webkit-box; /* wkhtmltopdf uses this one */
+    display: flex;
+    -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+    justify-content: center;
+}
+
+.row > div {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.row > div:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    width: 100%;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.pdf-page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto;
+    /*width: 210mm;
+    height: 297mm;*/
+    /*height: 362mm;*/
+    /*height: 371.472354mm;*/
+    /* width: 240mm; */
+    /* height: 367mm; */
+
+    height: 371.472354mm;
+    position: relative;
+}
+
+@media print {
+    @page { margin: 0; }
+}
+
+.about .container a.objectives-link{
+    margin-bottom: 0;
+}
+
+
+img.row-img{ 
+    width: 100% !important;
+}
+
+.col-md-2{
+    width: 20%;
+}
+
+.col-md-10{
+    width: 80%;
+}
+
+.our-clients .text-right h6{
+    padding-top: 14px;
+}
+
+section.our-clients .row:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+img.main-logo {
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+h4.name {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h4.organisation {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.pdf-hero-txt h3.title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.pdf-hero-txt h5.sub-title {
+    font-size: 18px;
+}
+
+.event-info-container {
+    margin-top: 35px;
+}
+
+.qrcode-container {
+    margin-top: 35px;
+}
+
+.qrcode-container img {
+    border: 3px solid #f2a544;
+    padding: 0px;
+    width: 170px;
+}
+
+hr.home-line {
+    margin: 20px 0;
+    margin-top: 25px;
+}
+
+section.about h4,
+section.objectives h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+section.about p {
+    font-size: 18px;
+}
+
+.our-clients{
+    width: 100%;
+    background-color: red;
+}
+
+section.main {
+    padding-top: 105px;
+    text-align: center;
+}
+
+section.main::before {
+    background-size: cover;
+    top: 20px;
+    left: 0;
+    width: 41%;
+    height: 15px;
+}
+/*******************/
+
+.footer-content{
+    display: -webkit-box; /* wkhtmltopdf uses this one */
+    display: flex;
+    -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+    justify-content: center;
+    padding: 30px 0;
+    padding-bottom: 20px;
+}
+
+section.our-clients {
+    padding: 30px 0;
+    margin-top: 35px;
+}
+
+section.our-clients h6 {
+    font-size: 25px;
+}
+
+.footer-content h2 {
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 17px;
+}
+
+.footer-content img {
+    width: 135px;
+    padding-right: 20px;
+}
+
+footer hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+}
+
+footer p {
+    display: -webkit-box; /* wkhtmltopdf uses this one */
+    display: flex;
+    -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+    justify-content: center;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: block;
+    top: -2px;
+    position: relative;
+}
+
+.event-info img.icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.event-info h6 {
+    margin-bottom: 10px;
+}
+
+.container{
+    padding: 0 80px;
+}
+
+a.objectives-link {
+    margin-top: 25px;
+}

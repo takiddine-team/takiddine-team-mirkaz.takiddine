@@ -1,0 +1,104 @@
+    @font-face {
+        font-family: "Nexa";
+        src: url("../fonts/NexaBold.woff2") format("woff2"), url("../fonts/NexaBold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Nexa-med";
+        src: url("../fonts/NexaRegular.woff2") format("woff2"), url("../fonts/NexaRegular.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Nexa-light";
+        src: url("../fonts/NexaLight.woff2") format("woff2"), url("../fonts/NexaLight.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: "SWISSRA-LIGHT";
+        src: url("../fonts/SWISSRA.woff2") format("woff2"), url("../fonts/SWISSRA.woff") format("woff");
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-MED";
+        src: url("../fonts/Swissra-Medium.woff2") format("woff2"), url("../fonts/Swissra-Medium.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "SWISSRA-BOLD";
+        src: url("../fonts/Swissra-Bold.woff2") format("woff2"), url("../fonts/Swissra-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    * {
+        margin: 0;
+        letter-spacing: 0 !important;
+    }
+    body {        
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .nexa-light { font-family: 'Nexa-light'; }
+    
+
+    h3.contract-name {
+        font-family: "SWISSRA-MED";
+    }
+
+    .row {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .row {
+        display: -webkit-box; /* wkhtmltopdf uses this one */
+        display: flex;
+        -webkit-box-pack: center; /* wkhtmltopdf uses this one */
+        justify-content: center;
+    }
+    
+    .row > div {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    
+    .row > div:last-child {
+        margin-right: 0;
+    }
+
+    .container {
+        page-break-after: always;
+        page-break-inside: avoid;
+        margin: 0 auto;
+        width: 3199px;
+        height: 1799.99px;
+        position: relative;
+        /*background: green;*/
+    }
+
+    @media print { a.printPage{display: none;} }
+    *{font-family: 'Nexa';}
+
+    .col-md-1{flex:0 0 auto !important;width:8.33333333% !important}.col-md-2{flex:0 0 auto !important;width:16.66666667% !important}.col-md-3{flex:0 0 auto !important;width:25% !important}.col-md-4{flex:0 0 auto !important;width:33.33333333% !important}.col-md-5{flex:0 0 auto !important;width:41.66666667% !important}.col-md-6{flex:0 0 auto !important;width:50% !important}.col-md-7{flex:0 0 auto !important;width:58.33333333% !important}.col-md-8{flex:0 0 auto !important;width:66.66666667% !important}.col-md-9{flex:0 0 auto !important;width:75% !important}.col-md-10{flex:0 0 auto !important;width:83.33333333% !important}.col-md-11{flex:0 0 auto !important;width:91.66666667% !important}.col-md-12{flex:0 0 auto !important;width:100%}

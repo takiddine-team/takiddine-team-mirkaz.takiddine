@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Expo Arabic Book';
+    src: url('ExpoArabic-Book.woff2') format('woff2'),
+        url('ExpoArabic-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lyon Arabic Disp App';
+    src: url('LyonArabicDisplayApp-Light.woff2') format('woff2'),
+        url('LyonArabicDisplayApp-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lyon Arabic Disp App';
+    src: url('LyonArabicDisplayApp-Bold.woff2') format('woff2'),
+        url('LyonArabicDisplayApp-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lyon Arabic Disp App Reg';
+    src: url('LyonArabicDisplayApp-Regular.woff2') format('woff2'),
+        url('LyonArabicDisplayApp-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
